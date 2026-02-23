@@ -1,0 +1,21 @@
+import './App.css'
+import Header from './components/Header'
+import Home from './pages/Home'
+import EmployeeMgmt from './pages/EmployeeMgmt'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
+
+function App() {
+
+  return (
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/employee-mgmt" element={<EmployeeMgmt />} />
+      </Routes>
+    </Router>
+  )
+}
+
+export default App
