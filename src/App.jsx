@@ -1,4 +1,3 @@
-// importing
 import { SignedIn, SignedOut, SignInButton, SignOutButton, User, UserProfile } from '@asgardeo/react';
 import './App.css';
 import Header from './components/Header';
