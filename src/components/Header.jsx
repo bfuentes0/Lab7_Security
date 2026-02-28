@@ -1,3 +1,4 @@
+import { SignedIn, SignedOut, SignInButton, SignOutButton } from '@asgardeo/react'
 import { NavLink } from 'react-router-dom'
 
 const Header = () => {
@@ -11,6 +12,14 @@ const Header = () => {
           EmployeeMgmt
         </NavLink>
       </nav>
+
+
+        <SignedIn>
+            <SignOutButton />
+        </SignedIn>
+        <SignedOut>
+            <SignInButton />
+        </SignedOut>
     </header>
   )
 }
